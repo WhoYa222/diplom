@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диплом</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/scripts.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo"> Название сайта</span>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li class="active"><a href="/html/cataloguecourses.html">Каталог курсов</a></li>
+                    <li class="btn"><a href="/html/aboutus.html">О Нас</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero_section_cataloguecourses container">
+            <div class="hero_info_cataloguecourses">
+                <h1 style="line-height: 1.5;">Выберите курс, который подходит вам — наша система подберёт материалы!
+                </h1>
+                <h2 style="line-height: 1.5;">Дайте ученикам возможность пройти индивидуальный учебный путь, который
+                    подстраивается под их потребности и темп обучения.
+                    Убедитесь, что наша система на базе машинного обучения повышает результаты обучения.</h2>
+            </div>
+            <img src="/img/ml.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="alternative_wrapper">
+
+        <div class="search-box">
+            <h1 style="line-height: 1.5;">Список Всех доступных курсов </h1>
+            <!--
+            <div class="dropdown">
+                <button class="dropbtn"> Курсы </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#maths"> Математика </a>
+                            <ul>
+                                <li><a href="#maths5"> Математика 5-ый класс </a></li>
+                                <li><a href="#maths6"> Математика 6-ой класс </a></li>
+                                <li><a href="#algebra"> Алгебра </a>
+                                    <ul>
+                                        <li><a href="#algebra7"> Алгебра 7-ой класс </a></li>
+                                        <li><a href="#algebra8"> Алгебра 8-ой класс </a></li>
+                                        <li><a href="#algebra9"> Алгебра 9-ый класс </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#geometry"> Геометрия </a>
+                                    <ul>
+                                        <li><a href="#geometry7"> Геометрия 7-ой класс </a></li>
+                                        <li><a href="#geometry8"> Геометрия 8-ой класс </a></li>
+                                        <li><a href="#geometry9"> Геометрия 9-ый класс </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#languages"> Иностранные языки </a>
+                            <ul>
+                                <li><a href="#eng"> Английский язык </a>
+                                    <ul>
+                                        <li><a href="#eng5"> Английский язык 5-ый класс </a></li>
+                                        <li><a href="#eng6"> Английский язык 6-ой класс </a></li>
+                                        <li><a href="#eng7"> Английский язык 7-ой класс </a></li>
+                                        <li><a href="#eng8"> Английский язык 8-ой класс </a></li>
+                                        <li><a href="#eng9"> Английский язык 9-ый класс </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#frn"> Французский язык </a>
+                                    <ul>
+                                        <li><a href="#frn5"> Французский язык 5-ый класс </a></li>
+                                        <li><a href="#frn6"> Французский язык 6-ой класс </a></li>
+                                        <li><a href="#frn7"> Французский язык 7-ой класс </a></li>
+                                        <li><a href="#frn8"> Французский язык 8-ой класс </a></li>
+                                        <li><a href="#frn9"> Французский язык 9-ый класс </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#scince"> Естественные науки </a>
+                            <ul>
+                                <li><a href="#physics"> Физика </a>
+                                    <ul>
+                                        <li><a href="#physics7"> Физика 7-ой класс </a></li>
+                                        <li><a href="#physics8"> Физика 8-ой класс </a></li>
+                                        <li><a href="#physics9"> Физика 9-ый класс </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#chemistry"> Химия </a>
+                                    <ul>
+                                        <li><a href="#chemistry8"> Химия 8-ой класс </a></li>
+                                        <li><a href="#chemistry9"> Химия 9-ый класс </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            -->
+            <form action="#" method="get" class="search-form">
+                <input type="text" id="courseSearch" placeholder="Поиск..." onkeyup="filterCourses()">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!--
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="/img/math.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/img/language.jpg">
+                </div>
+                <div class="slide">
+                    <img src="/img/science.jpg">
+                </div>
+            </div>
+        
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button> 
+        </div>
+-->
+
+        <div class="courses-wrapper">
+
+            <div class="courses-grid themed" style="line-height: 1.5;">
+                <!-- Математика -->
+                <div class="subject-group">
+                    <h2>Математика</h2>
+                    <div class="double-column">
+                        <div class="column">
+                            <!-- левая колонка -->
+                            <div class="course-block" id="maths5">
+                                <h3>Математика 5-ый класс</h3>
+                                <p>Арифметические операции и дроби.</p>
+                                <p>Решение текстовых задач.</p>
+                                <p>Наглядная планиметрия.</p>
+                            </div>
+                            <div class="course-block" id="maths6">
+                                <h3>Алгебра 7-ой класс</h3>
+                                <p>Линейные уравнения и системы уравнений.</p>
+                                <p>Простые функции и графики.</p>
+                                <p>Выражения и преобразования.</p>
+                            </div>
+                            <div class="course-block" id="algebra7">
+                                <h3>Алгебра 8-ой класс</h3>
+                                <p>Квадратные корни и степени.</p>
+                                <p>Квадратные уравнения и неравенства.</p>
+                                <p>Функции.</p>
+                            </div>
+                            <div class="course-block" id="geometry7">
+                                <h3>Алгебра 9-ой класс</h3>
+                                <p>Рациональные выражения.</p>
+                                <p>Уравнения и неравенства.</p>
+                                <p>Функции.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <!-- правая колонка -->
+                            <div class="course-block" id="algebra8">
+                                <h3>Математика 6-ой класс</h3>
+                                <p>Повторение и углубление арифметики.</p>
+                                <p>Основы геометрии.</p>
+                                <p>Уравнения и выражения.</p>
+                            </div>
+                            <div class="course-block" id="algebra9">
+                                <h3>Геометрия 7-ый класс</h3>
+                                <p>Основные понятия.</p>
+                                <p>Смежные и вертикальные углы.</p>
+                                <p>Треугольники.</p>
+                                <p>Параллельные прямые.</p>
+                            </div>
+                            <div class="course-block" id="geometry8">
+                                <h3>Геометрия 8-ой класс</h3>
+                                <p>Четырёхугольники.</p>
+                                <p>Многоугольники.</p>
+                                <p>Окружность и круг.</p>
+                                <p>Площади фигур.</p>
+                            </div>
+                            <div class="course-block" id="geometry9">
+                                <h3>Геометрия 9-ый класс</h3>
+                                <p>Измерение геометрических величин.</p>
+                                <p>Векторы.</p>
+                                <p>Подобия.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Английский язык -->
+                <div class="column english-group">
+                    <h2>Английский язык</h2>
+                    <div class="course-block" id="eng5">
+                        <h3>Английский язык 5-ый класс</h3>
+                        <p>Present Simple, Present Continuous</p>
+                        <p>Модальные глаголы .</p>
+                        <p>Написание открыток, коротких писем.</p>
+                    </div>
+                    <div class="course-block" id="eng6">
+                        <h3>Английский язык 6-ой класс</h3>
+                        <p>Past Simple, Future Simple (will), to be going to.</p>
+                        <p>Степени сравнения прилагательных.</p>
+                        <p>Количественные местоимения.</p>
+                    </div>
+                    <div class="course-block" id="eng7">
+                        <h3>Английский язык 7-ой класс</h3>
+                        <p>Present Perfect, Past Continuous.</p>
+                        <p>Пассивный залог.</p>
+                        <p>Условные предложения 1-го типа.</p>
+                    </div>
+                    <div class="course-block" id="eng8">
+                        <h3>Английский язык 8-ой класс</h3>
+                        <p>Past Perfect.</p>
+                        <p>Написание формальных писем, отзывов.</p>
+                        <p>Условные предложения 2-го типа.</p>
+                    </div>
+                    <div class="course-block" id="eng9">
+                        <h3>Английский язык 9-ый класс</h3>
+                        <p>Future Continuous, Future Perfect.</p>
+                        <p>Условные предложения 3-го типа.</p>
+                        <p>Понимание устной и письменной речи.</p>
+                    </div>
+                </div>
+
+                <!-- Французский язык -->
+                <div class="column french-group">
+                    <h2>Французский язык</h2>
+                    <div class="course-block" id="frn5">
+                        <h3>Французский язык 5-ый класс</h3>
+                        <p>Спряжение глаголов, артикли, множественное число существительных.</p>
+                        <p>Написание открыток, коротких писем.</p>
+                    </div>
+                    <div class="course-block" id="frn6">
+                        <h3>Французский язык 6-ой класс</h3>
+                        <p>Прошедшее время, будущее время.</p>
+                        <p>Сравнения прилагательных.</p>
+                    </div>
+                    <div class="course-block" id="frn7">
+                        <h3>Французский язык 7-ой класс</h3>
+                        <p>Imparfait.</p>
+                        <p>Условные предложения 1-го типа.</p>
+                        <p>Пассивный залог .</p>
+                    </div>
+                    <div class="course-block" id="frn8">
+                        <h3>Французский язык 8-ой класс</h3>
+                        <p>Сложные времена.</p>
+                        <p>Косвенная речь.</p>
+                    </div>
+                    <div class="course-block" id="frn9">
+                        <h3>Французский язык 9-ый класс</h3>
+                        <p>Условные предложения 2-го и 3-го типа.</p>
+                        <p>Написание эссе.</p>
+                    </div>
+                </div>
+
+                <!-- Естественные науки -->
+                <div class="column physics-group">
+                    <h2>Физика</h2>
+                    <div class="course-block" id="physics7">
+                        <h3>Физика 7-ой класс</h3>
+                        <p>Движение и взаимодействие тел.</p>
+                        <p>Понятие работы. Энергия. Мощность.</p>
+                        <p>Давление твёрдых тел, газов и жидкостей.</p>
+                    </div>
+                    <div class="course-block" id="physics8">
+                        <h3>Физика 8-ой класс</h3>
+                        <p>Тепловые явления.</p>
+                        <p>Электрические и электромагнитные явления.</p>
+                        <p>Световые явления.</p>
+                    </div>
+                    <div class="course-block" id="physics9">
+                        <h3>Физика 9-ый класс</h3>
+                        <p>Законы сохранения в механике.</p>
+                        <p>Основы кинематики и динамики.</p>
+                        <p>Механические колебания и волны.</p>
+                        <p>Строение атома и атомного ядра.</p>
+                    </div>
+                </div>
+
+                <div class="column chemistry-group">
+                    <h2>Химия</h2>
+                    <div class="course-block" id="chemistry8">
+                        <h3>Химия 8-ой класс</h3>
+                        <p>Строение вещества.</p>
+                        <p>Состав и классификация химических соединений.</p>
+                        <p>Химические взаимодействия и реакции.</p>
+                    </div>
+                    <div class="course-block" id="chemistry9">
+                        <h3>Химия 9-ый класс</h3>
+                        <p>Химическая связь и реакции.</p>
+                        <p>Окислительно-восстановительные реакции.</p>
+                        <p>Неорганические соединения.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container email">
+            <h2 style="line-height: 2.0;">Свяжитесь с нами</h2>
+            <h4 style="line-height: 1.5;">Мы готовы ответить на ваши вопросы и помочь с выбором курсов для вашего
+                учебного заведения.</h4>
+            <div class="block">
+                <div>
+                    <h3 style="line-height: 1.5;"> +7 (985) 270-95-60
+                        <p> ahtoxa.mo1@yandex.ru </p>
+                    </h3>
+                    <img src="/img/tg.svg" alt="" onClick="window.open('https://t.me/tice_ya_splu');">
+                </div>
+                <div>
+                    <input type="email" id="EmailField" placeholder="Введите Ваш электронный адрес">
+                    <input type="name" placeholder="Введите Ваше имя">
+                    <button onClick="checkmail();">Связаться с нами</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
